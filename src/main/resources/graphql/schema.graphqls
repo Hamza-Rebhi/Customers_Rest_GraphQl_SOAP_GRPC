@@ -1,0 +1,20 @@
+type Query {
+    allCustomers:[CustomerDTO],
+    customerById(id:Int) : CustomerDTO
+}
+
+type Mutation {
+    addOneCustomer(customerDTO : CustomerDTO):CustomerDTO
+}
+
+type CustomerDTO {
+    id : Int,
+    name : String,
+    email : String
+}
+
+input CustomerInput {
+    id:Int,
+    name : String,
+    email : String
+}
