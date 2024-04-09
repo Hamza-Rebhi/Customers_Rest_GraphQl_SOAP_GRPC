@@ -4,7 +4,7 @@ type Query {
 }
 
 type Mutation {
-    addOneCustomer(customerDTO : CustomerDTO):CustomerDTO
+    addOneCustomer(customerDTO : CustomerInput):CustomerDTO
 }
 
 type CustomerDTO {

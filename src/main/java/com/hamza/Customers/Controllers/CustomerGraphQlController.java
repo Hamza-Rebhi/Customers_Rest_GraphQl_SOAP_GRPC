@@ -14,7 +14,7 @@ import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-public class CustomerGraphQl {
+public class CustomerGraphQlController {
     private final CustomerService customerService;
     @QueryMapping
     public ResponseEntity<List<CustomerDTO>> allCustomers(){
